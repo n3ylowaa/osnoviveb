@@ -1,0 +1,761 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  pointer-events: none !important;
+}
+
+body {
+  font-family: 'Inria Serif', serif;
+  background: #ffffff;
+  color: #000000;
+  line-height: 1.4;
+  overflow-x: hidden;
+  user-select: text !important;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.контейнер {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 260px;
+  padding-right: 260px;
+}
+
+.фон, .преимущества, .о-нас, .подписка, .особенности, .каталог, .консультанты, .информация, .подвал {
+  width: 100%;
+}
+
+.шапка {
+  height: 54px;
+  background: white;
+  z-index: 10;
+  position: relative;
+}
+
+.шапка .контейнер {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.телефон {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.кнопка-звонок {
+  background: #FFA019;
+  border-radius: 10px;
+  width: 184px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: default;
+}
+
+.меню {
+  height: 62px;
+  background: white;
+  z-index: 10;
+  position: relative;
+}
+
+.меню .контейнер {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.логотип {
+  font-size: 30px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.ссылки {
+  display: flex;
+  align-items: center;
+}
+
+.ссылки a {
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  cursor: default;
+  margin-right: 40px;
+}
+
+.ссылки a:last-child {
+  margin-right: 0;
+}
+
+.фон {
+  position: relative;
+  height: 879px;
+  background: #D9D9D9;
+  overflow: hidden;
+}
+
+.фон-картинка {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.фон-затемнение {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.60);
+}
+
+.фон-контент {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.заголовок {
+  font-size: 56px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.описание {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  max-width: 724px;
+  margin-bottom: 50px;
+}
+
+.кнопка-каталог {
+  background: white;
+  border-radius: 10px;
+  width: 184px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: default;
+}
+
+.заголовок-секции {
+  font-size: 34px;
+  font-weight: 300;
+  text-align: left; 
+  margin-bottom: 40px;
+  display: block;
+}
+
+.преимущества {
+  padding: 60px 0 40px;
+}
+
+.преимущества-сетка {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.преимущество {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 22%;
+}
+
+.преимущество-иконка {
+  width: 136px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.преимущество-текст {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.о-нас {
+  padding: 40px 0;
+}
+
+.о-нас-текст {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: left; 
+  display: block;
+}
+
+.подписка {
+  background: #FFA019;
+  height: 94px;
+  display: flex;
+  align-items: center;
+}
+
+.подписка-внутри {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.подписка-текст {
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  max-width: 284px;
+  margin-right: 40px;
+}
+
+.подписка-форма {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.подписка-поле {
+  width: 220px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.70);
+  color: white;
+  font-family: 'Inria Serif', serif;
+  font-size: 14px;
+  padding: 0 16px;
+  outline: none;
+  display: block;
+  margin-right: 20px;
+}
+
+.подписка-поле::placeholder {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.подписка-кнопка {
+  width: 220px;
+  height: 45px;
+  background: white;
+  border: none;
+  color: #000;
+  font-family: 'Inria Serif', serif;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: default;
+}
+
+.особенности {
+  padding: 60px 0;
+}
+
+.особенности-колонки {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.особенность-колонка {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+}
+
+.особенность-пункт {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.особенности-прим {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 1.5;
+  display: block;
+}
+
+.каталог {
+  padding: 60px 0;
+  background: #FBFBFB;
+}
+
+.каталог-шапка {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.каталог-шапка .заголовок-секции {
+  margin-bottom: 0;
+}
+
+.каталог-фильтры {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.фильтр, .фильтр-активный {
+  font-size: 16px;
+  font-weight: 300;
+  cursor: default;
+  padding: 8px 20px;
+  border-radius: 30px;
+  border: none;
+  font-family: 'Inria Serif', serif;
+  margin-left: 20px;
+  background: #e6e6e6;
+  color: #000;
+}
+
+.фильтр-активный {
+  background: #FFA019;
+  color: white;
+}
+
+.каталог-сетка {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.товар {
+  width: 23%;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.10);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.товар-бейдж {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  background: #FFA019;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 8px 16px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.товар-картинка {
+  width: 100%;
+  height: 230px;
+  object-fit: contain;
+  background: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.товар-инфо {
+  padding: 0 16px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.товар-название {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.товар-цена {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: auto;
+  display: block;
+}
+
+.консультанты {
+  padding: 60px 0;
+}
+
+.консультанты-сетка {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.консультант {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 31%;
+  margin-bottom: 40px;
+}
+
+.консультант-фото {
+  width: 130px;
+  height: 160px;
+  object-fit: cover;
+  margin-right: 15px;
+  background: #f5f5f5;
+  flex-shrink: 0;
+}
+
+.консультант-инфо {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.консультант-имя {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.консультант-должность {
+  font-size: 12px;
+  font-style: italic;
+  font-family: 'Arimo', sans-serif;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.консультант-кнопка {
+  background: #FFA019;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: default;
+}
+
+.бренды {
+  background: #9B9B9B;
+  width: 100%;
+  min-height: 194px;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.бренды-внутри {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.бренд {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  white-space: nowrap;
+  margin: 10px 20px;
+}
+
+.информация {
+  padding: 60px 0;
+}
+
+.информация-сетка {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.статья {
+  width: 23%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  display: block;
+}
+
+.статья-фон {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.статья-затемнение {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.40);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.статья-название {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 1.4;
+  display: block;
+}
+
+.подвал {
+  background: #FBFBFB;
+  padding: 60px 0;
+}
+
+.подвал-контент {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.подвал-колонка {
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+}
+
+.подвал-колонка:first-child {
+  max-width: 350px;
+  min-width: 280px;
+}
+
+.подвал-описание {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8191A6;
+  line-height: 1.5;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.подвал-копирайт {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8191A6;
+  margin-top: 16px;
+  display: block;
+}
+
+.подвал-заголовок {
+  font-size: 14px;
+  font-weight: 700;
+  color: #303842;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  text-align: left;
+  display: block;
+}
+
+.подвал-ссылка {
+  font-size: 14px;
+  font-weight: 300;
+  color: #8191A6;
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1200px) {
+  .контейнер {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .консультант {
+    width: 48%;
+  }
+}
+
+@media (max-width: 992px) {
+  .ссылки a {
+    margin-right: 20px;
+  }
+  .фон {
+    height: 700px;
+  }
+  .заголовок {
+    font-size: 42px;
+  }
+  .преимущество {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  .товар, .статья {
+    width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .контейнер {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .шапка {
+    height: auto;
+    padding: 10px 0;
+  }
+  .шапка .контейнер {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .телефон {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .меню {
+    height: auto;
+    padding: 10px 0;
+  }
+  .меню .контейнер {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .логотип {
+    margin-bottom: 12px;
+  }
+  .ссылки {
+    flex-wrap: wrap;
+  }
+  .ссылки a {
+    font-size: 12px;
+    margin: 0 10px 10px 0;
+  }
+  .фон {
+    height: 600px;
+  }
+  .заголовок {
+    font-size: 32px;
+  }
+  .описание {
+    font-size: 16px;
+  }
+  .заголовок-секции {
+    font-size: 28px;
+  }
+  
+  .подписка {
+    height: auto;
+    padding: 20px 0;
+  }
+  .подписка-внутри {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .подписка-текст {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .подписка-поле {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .особенности-колонки {
+    flex-direction: column;
+  }
+  .особенность-колонка {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .бренды {
+    padding: 30px 0;
+  }
+  .бренд {
+    font-size: 30px;
+    margin: 0 10px 10px 0;
+  }
+  
+  .каталог-шапка {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .фильтр, .фильтр-активный {
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .подвал-контент {
+    flex-direction: column;
+  }
+  .подвал-колонка {
+    margin-bottom: 30px;
+  }
+  .консультант {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .фон {
+    height: 500px;
+  }
+  .заголовок {
+    font-size: 26px;
+  }
+  .описание {
+    font-size: 14px;
+  }
+  .преимущество {
+    width: 100%;
+  }
+  .товар, .статья {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .товар-картинка {
+    height: 200px;
+  }
+}
